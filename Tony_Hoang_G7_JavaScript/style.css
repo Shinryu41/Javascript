@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+}
+.accordeon {
+    border: 1px solid rgba(146, 146, 146, 0.3);
+    width: 100%;
+    margin: 10px auto;
+}
+
+.titre {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 8px 16px rgba(146, 146, 146, 0.3);
+    -webkit-box-shadow: 0px 8px 16px rgba(146, 146, 146, 0.3);
+    -moz-box-shadow: 0px 8px 16px rgba(146, 146, 146, 0.3);
+}
+
+.titre p {
+    font-weight: 700;
+}
+
+.contenu {
+    padding: 0 20px;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenu button {
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 30, 0);
+    cursor: pointer;
+}
+
+form {
+    background-color: rgb(14, 75, 189);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+
+}
+
+form input {
+    width: 100%;
+}
+
+form > div {
+    flex: 0 0 50%;
+    padding: 1rem;
+}
+
+.soumission {
+    width: 100%;
+
+}
+
+.accordeon.open .contenu {
+    padding: 30px 20px;
+    height: auto;
+    visibility: visible;
+}
+
+.accordeon.open .titre span {
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/CloseupFace.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 200px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%);
+}
+
+.Character img {
+    width: 300px;
+}
+
+.Character {
+    display: flex;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.grosminou {
+    display: flex;
+    justify-content: space-between;
+    padding: 250px;
+}
+
+.boxcontainer {
+    width: min-content;
+}
+
+
+.boxcontainer {
+    text-align: center;
+    font-size: 20px;
+}
+
+.pampa {
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.pampabox img {
+    width: 400px;
+}
+
+.emperadorbox img {
+    width: 700px;
+}
+
+.senorbox {
+    width: min-content;
+}
+.senorbox img {
+    width: 275px;
+}
+
+.emotebox {
+    margin-top: 10px;
+    padding: 30px;
+    display: flex;
+    font-size: 20px;
+}
+.emotebox img {
+    width: 600px;
+}
+
+.mogbox1 {
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.skinbox img{
+    width: 500px;
+}
+
+.fatbox {
+    width: min-content;
+}
+
+.mogbox2 {
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.box img{
+    
+    width: 500px;
+}
+
+.box {
+    width: min-content;
+}
+
+.mogbox3 {
+    display: flex;
+    margin: 30px;
+    
+}
+
+.textbox {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.moggle {
+    margin: auto;
+}
+
+@media screen and (max-width:900px) {
+    header h1 {
+        font-size: 100px;
+    }
+
+    .emotebox, .pampa, .Character, .mogbox1,.mogbox2,.mogbox3 {
+        flex-direction: column
+    }
+
+    .emotebox, .pampabox, .emperadorbox, .senorbox, .boxcontainer, .box, .skinbox, .fatbox  {
+        width: auto;
+    }
+
+    .emotebox img, .pampabox img, .emperadorbox img, .senorbox img,.boxcontainer img, .Character img, .box img, .skinbox img, .fatbox img {
+        width: 100%;
+    }
+
+    .grosminou {
+        flex-direction: column; 
+        padding: 0%;
+    } 
+}
